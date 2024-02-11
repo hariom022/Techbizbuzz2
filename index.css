@@ -553,6 +553,9 @@ ul li:hover{
   text-decoration: none;
   color: var(--secondary-color);
 }
+.footer-text ul{
+  padding-left: 0px !important;
+}
 
 /* ******************************Animation ****************************** */
 
