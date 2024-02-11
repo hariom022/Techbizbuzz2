@@ -22,6 +22,7 @@ h2 {
 }
 p{
     font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    
 }
 /* ***********************************hr********************************* */
 .styled-hr {
@@ -52,20 +53,19 @@ p{
 }
 .navbar-scrolled {
   background-color: white !important;
+  color: black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .navbar-scrolled .offcanvas-body ul a{
     color: black !important;
 }
  .navbar   .btn-togal{
-    color: black !important;
     background-color: black !important;
 }
 
 .offcanvas {
-  color: white;
+    background:	#ff8a60 !important;
 }
 
 .offcanvas-header {
@@ -94,7 +94,7 @@ ul li{
     padding: 0px 8px;
 }
 ul li:hover{
-    color: var(--primary-color) !important;
+    /* color: var(--primary-color) !important; */
 
     
 }
@@ -142,15 +142,9 @@ ul li:hover{
   align-items: center;
 }
 .modal-backdrop{
-    opacity: 0.3 !important;
+    opacity: 0.1 !important;
 }
-@media screen and (max-width: 900px){
 
-    .form-container1{
-        
-    }
-
-}
 
 @media screen and (max-width: 600px) {
   .container {
@@ -183,13 +177,15 @@ ul li:hover{
 
 .client .client-container img {
   height: 50px;
+  width: 120px;
   align-items: center;
   margin-top: 20px;
   text-align: center;
+  filter: grayscale(100);
 }
 .client .client-container img:hover {
   color: #e84545;
-  background-color: #e84545;
+  filter: grayscale(0);
 }
 
 .client-container-img {
@@ -221,6 +217,9 @@ ul li:hover{
 .about-text-container{
     padding-top: 80px;
 
+}
+.about-text-container p{
+  text-align: justify;
 }
 .About h3 {
   font-size: 16px;
@@ -344,6 +343,10 @@ ul li:hover{
   transition: 0.3s ease-in-out;
 }
 
+.services-section p{
+  text-align: justify;
+}
+
 .services-section .soft-content {
   margin-left: 32px;
 }
@@ -364,6 +367,7 @@ ul li:hover{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .project-img .img-front {
   grid-row: 1;
   grid-column: 1 / span 8;
@@ -413,6 +417,9 @@ ul li:hover{
 
 /* ****************************** Carrer ******************************* */
 
+.career-container p{
+  text-align: justify;
+}
 .career-text img {
   height: 500px;
 }
@@ -526,17 +533,23 @@ ul li:hover{
 .social-link li:hover {
   color: var(--primary-color);
 }
-.footer-links {
+.footer-text {
   margin-top: 50px;
+}
+.footer .footer-service-text{
+  text-align: center;
 }
 .footer-contact {
   margin-top: 50px;
 }
-.footer-links li {
+ .footer-about .footer-service{
+    padding: 0px !important;
+}
+.footer-text li {
   list-style: none;
   margin-bottom: 12px;
 }
-.footer-links a {
+.footer-text a {
   text-decoration: none;
   color: var(--secondary-color);
 }
